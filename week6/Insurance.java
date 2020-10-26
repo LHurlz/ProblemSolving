@@ -27,7 +27,7 @@ public class Insurance {
 
     @Override
     public String toString() {
-        return "  Policy Name: " + policyName  +
-                "  Policy ID: " + policyID;
+        return "Policy Name: " + getPolicyName()  +
+                "  Policy ID: " + getPolicyID();
     }
 }

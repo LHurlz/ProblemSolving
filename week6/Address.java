@@ -57,7 +57,7 @@ public class Address{
 
     @Override
     public String toString() {
-        return "  Street: " + getStreet() +
+        return "Street: " + getStreet() +
                 "  Town: " + getTown() +
                 "  County: " + getCounty() +
                 "  Country: " + getCountry() +

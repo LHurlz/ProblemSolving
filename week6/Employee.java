@@ -47,9 +47,17 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Name: " + name +
-                "  ID: " + id +
-                "\n\nAddress: " + address +
-                "\n\nInsurance: " + insurance;
+        String output="";
+
+        output+= "Name: " + getName() +
+                "\nID: " + getId() +
+                "\nAddress: " + getAddress();
+
+        if(getInsurance()==null)
+            output+="\nInsurance: No insurance details";
+        else
+            output+="\nInsurance: " +getInsurance();
+
+        return output;
     }
 }
